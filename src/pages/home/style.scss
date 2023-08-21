@@ -1,0 +1,19 @@
+.home{
+    padding-top: 74px;
+    padding-bottom: 50px;
+    .contentWrapper{
+        display: flex;
+    }
+    .left{
+        width: 360px;
+        // height: 700px;
+        // background: #D9D9D9;
+    }
+    .middle{
+        width: calc(100% - 720px);
+    }
+    .right{
+        background: #D9D9D9;
+        width: 360px;
+    }
+}
