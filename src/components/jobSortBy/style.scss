@@ -1,0 +1,42 @@
+
+.job-sort{
+    background:#404654;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+    .text-sort{
+        font-size: 16px;
+        text-align: start;
+        display: inline-block;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: initial;
+        width: 50%;
+    }
+    .btn-sort{
+        color: #0000;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        background-color: var(--background-color);
+        min-width: 100px;
+        &:hover{
+            background-color: var(--background-color);
+        }
+        .sort-by{
+            display: inline-block;
+            color: black;
+            text-transform: initial;
+            font-weight: 900;
+        }
+        svg{
+            color: black;
+            font-size: initial;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.middle{
+    background-color: white;
+    .contentWrapper{
+        display: block;
+        padding: 0;
+    }
+    .job-cards{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+}

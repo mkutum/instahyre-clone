@@ -1,0 +1,113 @@
+.card-box{
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--background-color);
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 0px;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.4);
+    }
+    .logo{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        .img-align{
+            // margin-top: 10px;
+        }
+    }
+    .company-details{
+        color: #4A5056;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: calc(100% - 40%);
+        padding-right: 5px;
+        gap: 7px;
+        border-right:1px solid #EDEDED;
+        .job-title{
+            color: #3F454A;
+            font-size: 15px;
+            font-weight: 700;
+           
+        }
+        .job-type{
+            color: #4A5056;
+            font-size: 14px;
+            font-weight: 600;
+            svg{
+                color: #F1A67C;
+            }
+            .type{
+                vertical-align: middle;
+            }
+        }
+        .company-founded{
+            color: #8B8B8B;
+            font-size: 14px;
+            font-weight: 500;
+            
+            .founded{
+                vertical-align: middle;
+            }
+            svg{
+                color: #0B84A5;
+            }
+        }
+        .details{
+            font-size: 13px;
+            line-height: initial;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            max-height: 48px;
+        }
+        .job-department{
+            .btn-skill{
+                margin-left: 0;
+            }
+
+        }
+        .icon{
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            svg{
+                width: 16px;
+                height: 18px;
+                margin-right: 5px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .actions{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: none;
+        justify-content: center;
+        padding: 0 26px;
+        .btn-view{
+            background:#02BFA0;
+            color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            gap: 2px;
+        }
+        .btn-text{
+             color: #8A8A8A;
+             font-weight: 400;
+             text-align: center;
+             &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+             }
+        }
+    }
+}
