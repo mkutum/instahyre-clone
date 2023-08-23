@@ -6,7 +6,7 @@ import Status from './Status';
 import Location from "./Location";
 import Company from "./Company";
 import Industry from './Industry';
-import SearchForm from '../../../components/searchForm/SearchForm';
+
 
 
 const LeftFilter = () => {
