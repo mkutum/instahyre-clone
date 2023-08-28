@@ -8,6 +8,7 @@
     align-items: center;
     border: 1px solid  rgba(0, 0, 0, 0.6);
     padding: 0 20px;
+    position: relative;
     .text-sort{
         font-size: 16px;
         text-align: start;
@@ -37,6 +38,27 @@
         svg{
             color: black;
             font-size: initial;
+        }
+    }
+
+    .popup{
+        position: absolute;
+        right: 20px;
+        background:#404654;
+        color: white;
+        padding: 10px;
+        top: 52px;
+        z-index: 1;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        .css-ahj2mt-MuiTypography-root{
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+            color: white;
+        }
+        .Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+            color: #1976d2;
         }
     }
 }

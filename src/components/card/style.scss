@@ -99,6 +99,14 @@
             color: white;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             gap: 2px;
+            font-weight: 800;
+            text-transform: initial;
+            .icon-dir{
+                font-weight: 600;
+            }
+            &:hover{
+                background:#19927A ;
+            }
         }
         .btn-text{
              color: #8A8A8A;

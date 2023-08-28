@@ -1,0 +1,128 @@
+.left-pop-card{
+    padding: 15px;
+    width: 31%;
+    background-color: #F6F7F9;
+    .logo-place{
+        display: flex;
+        justify-content: center;
+        vertical-align: top;
+    }
+    .employer-brief{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px 10px 10px;
+        .title-glance{
+            color: #40454A;
+            font-weight: 550;
+            font-size: 16px;
+        }
+        .company-founded,.company-size{
+            color: #697077;
+            font-size: 14px;
+        }
+        .eb{
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .employer-links{
+        margin-left: 10px;
+        margin-right: 10px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            li{
+                list-style: none;
+                align-items: center;
+                a{
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .instamatch{
+        margin: 20px 10px;
+        .suggest{
+            text-align: left;
+            color: #8A8A8A;
+            font-size: 11px;
+            margin-bottom: 6px;
+            margin-top: 6px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+        .mood{
+            text-align: left;
+            color: #8A8A8A;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .insta-text{
+            text-align: center;
+            color: #40454A;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 10px 0px;
+        }
+        .progress{
+            height: 28px;
+            width: 100%;
+            background-color: lightgray;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            
+            .match{
+                height: 100%;
+                opacity: 1;
+                background: linear-gradient(to right, rgb(247, 74, 88), rgb(250, 218, 124));
+            }
+
+        }
+    }
+    .reviews{
+        margin: 0px 10px;
+        .review-title{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            text-align: center;
+            color: #40454A;
+            font-weight: 600;
+        }
+        .review-row{
+            margin: 6px;
+            .review-label{
+                font-size: 12px;
+                font-weight: 600;
+                text-align: left;
+                line-height: 1.8;
+            }
+            .review-star{
+                line-height: 1.8;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .stars{
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                }
+                .star-rates{
+                    display: inline-block;
+                    color: #697077;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}

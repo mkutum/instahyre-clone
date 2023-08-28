@@ -5,14 +5,14 @@ import JobSortBy from '../../../components/jobSortBy/JobSortBy';
 import Card from '../../../components/card/Card';
 import { job } from "../../../data";
 
-const JobCards = () => {
+const JobCards = ({ handleEmployer }) => {
     return (
         <div className='middle'>
             <ContentWrapper>
                 <JobSortBy />
                 <div className='job-cards'>
                     {
-                        job.map((employer, index) => <Card employer={employer} key={index} />)
+                        job.map((employer, index) => <Card employer={employer} key={index} handleEmployer={handleEmployer} />)
                     }
                 </div>
             </ContentWrapper>

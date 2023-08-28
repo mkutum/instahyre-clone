@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import "./style.scss";
 import Img from '../laziLoadImage/Img';
-import GameBerry from "../../assets/gameberry.png";
 import Skills from '../skills/Skills';
 import { HiUserGroup } from "react-icons/hi";
 import { ImLocation } from "react-icons/im"
 import { Button } from '@mui/material';
 import { FiChevronsRight } from "react-icons/fi";
+import { useDispatch } from 'react-redux';
+import { getEmployerDetails } from '../../store/homeSlice';
 
-const Card = ({ employer }) => {
+
+
+const Card = ({ employer, handleEmployer }) => {
+    const dispatch = useDispatch();
+    const handlePopup = (employer) => {
+        handleEmployer();
+        dispatch(getEmployerDetails(employer));
+    }
+
     return (
-        <div className='card-box'>
+        <div id={employer.id} className='card-box' onClick={() => handlePopup(employer.id)}>
             <div className='logo'>
                 <Img
                     src={employer.logo}
@@ -43,7 +52,7 @@ const Card = ({ employer }) => {
             <div className='actions'>
 
                 <Button className='btn-view'>
-                    View <FiChevronsRight />
+                    View <FiChevronsRight className='icon-dir' />
                 </Button>
                 <span className='btn-text'>
                     Not Interested

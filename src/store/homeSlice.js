@@ -30,14 +30,18 @@ export const homeSlice = createSlice({
     name: "home",
     initialState: {
         searchForm: initialForm,
+        employerDetails: null
     },
     reducers: {
         getSearchForm: (state, action) => {
             state.searchForm.push(action.payload);
+        },
+        getEmployerDetails: (state, action) => {
+            state.employerDetails = action.payload;
         }
     }
 
 });
 
-export const { getSearchForm } = homeSlice.actions;
+export const { getSearchForm, getEmployerDetails } = homeSlice.actions;
 export default homeSlice.reducer;
